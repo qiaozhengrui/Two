@@ -1,7 +1,8 @@
-<DOCTYPE html>
-  <html>
+<!DOCTYPE html>
+  <html lang="en">
 
   <head>
+    <meta charset="UTF-8">
     <title>Document</title>
     <style>
       body {
@@ -26,7 +27,7 @@
         margin-right: auto;
       }
 
-      ul.cards {
+      ul.a {
         width: 600px;
         margin: auto;
         padding: 0px;
@@ -35,7 +36,7 @@
 
       }
 
-      ul.cards li {
+      ul.a li {
         width: 180px;
         height: 40px;
         box-sizing: border-box;
@@ -43,30 +44,56 @@
         margin-bottom: 15px;
         text-align: center;
         line-height: 34px;
-
         background-color: pink;
       }
 
-      ul.cards li:hover {
+      ul.a li:hover {
         background-color: red;
       }
 
-      ul.cards li:nth-child(n+5) {
+      ul.a li:nth-child(n+5) {
         margin-left: 210px;
       }
 
-      ul.cards li:nth-child(n+9) {
+      ul.a li:nth-child(n+9) {
         margin-left: 420px;
       }
 
-      ul.cards li:nth-child(4n+5) {
+      ul.a li:nth-child(4n+5) {
         margin-top: -220px;
       }
 
-      ul.cards li:last-child {
+      ul.a li:last-child {
         margin-bottom: 0;
       }
 
+      .b {
+        width: 600px;
+        margin: auto;
+        padding: 0;
+        list-style: none;
+      }
+
+      .b li {
+        width: 180px;
+        height: 40px;
+        list-style: none;
+        text-align: center;
+        border: 3px solid;
+        background-color: rgb(255, 251, 10);
+        box-sizing: border-box;
+        margin-bottom: 15px;
+        margin-right: 25px;
+        display: inline-block;
+      }
+
+      .b li:nth-child(3n) {
+        margin-right: 0;
+      }
+
+      .b li:hover {
+        background-color: rgb(180, 0, 252);
+      }
       ul.links {
         padding: 0;
         width: 600px;
@@ -93,7 +120,7 @@
       宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px
       页面主体 宽度600px</p>
 
-    <ul class="cards">
+    <ul class="a">
       <li>产品</li>
       <li>产品</li>
       <li>产品</li>
@@ -106,6 +133,21 @@
       <li>产品</li>
       <li>产品</li>
       <li>产品</li>
+    </ul>
+
+    <ul class="b">
+      <li>目录</li>
+      <li>目录</li>
+      <li>目录</li>
+      <li>目录</li>
+      <li>目录</li>
+      <li>目录</li>
+      <li>目录</li>
+      <li>目录</li>
+      <li>目录</li>
+      <li>目录</li>
+      <li>目录</li>
+      <li>目录</li>
     </ul>
 
     <ul class="links">
