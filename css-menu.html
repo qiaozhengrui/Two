@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+    <style>
+    * {
+    background-color: rgba(0,0,0,0.08);
+    box-shadow: inset 0 0 1px red;
+    }
+
+
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      font-size: 26px;
+    }
+
+    ul.main-menu li {
+      white-space: nowrap;
+      position: relative;
+    }
+
+    ul.main-menu li:hover {
+      background-color: coral;
+    }
+
+    ul.main-menu > li {
+          display: inline-block;
+        }
+
+    ul.main-menu ul {
+      display: none;
+      position: absolute;
+    }
+
+    li:hover > ul {
+      display: block;
+    }
+
+    ul ul ul {
+      left: 100%;
+      top: 0;
+    }
+
+    </style>
+  </head>
+  <body>
+    <ul class="main-menu">
+      <li>大标题
+        <ul>
+          <li>目录</li>
+          <li>目录</li>
+          <li>三目录
+            <ul>
+              <li>第一章</li>
+              <li>第二章</li>
+              <li>第三章</li>
+            </ul>
+          </li>
+          <li>目录</li>
+        </ul>
+    </li>
+      <li>二标题
+        <ul>
+          <li>名称</li>
+          <li>名称</li>
+          <li>名称</li>
+          <li>名称</li>
+        </ul>
+    </li>
+      <li>三标题
+        <ul>
+          <li>价格</li>
+          <li>价格</li>
+          <li>价格</li>
+          <li>价格</li>
+        </ul>
+      </li>
+      <li>四标题
+        <ul>
+          <li>样式</li>
+          <li>样式</li>
+          <li>样式</li>
+          <li>样式</li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
