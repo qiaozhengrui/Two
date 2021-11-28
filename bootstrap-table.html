@@ -5,8 +5,110 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+
+* {
+  xbackground-color: rgba(0,0,0,0.08);
+  xbox-shadow: inset 0 0 1px red;
+  }
+
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    tr,th,td {
+      padding: 8px;
+    }
+
+    .table thead {
+      border-bottom: 2px solid #000;
+    }
+
+    .table tr {
+      height: 35px;
+      border-bottom: 1px solid #dee2e6;
+    }
+
+    .table-dark {
+      background-color: #343a40;
+      color: white;
+    }
+
+    .table-dark thead {
+      border-bottom: 2px solid white;
+    }
+
+    .table-dark tr {
+      height: 35px;
+      border-top: 1px solid #454d45;
+    }
+
+    .table-striped.table tbody tr:nth-child(odd) {
+      background-color: #f2f2f2;
+    }
+
+    .table-striped.table-dark tbody tr:nth-child() {
+      background-color: #3e444a;
+    }
+
+    .table-hover.table thead tr:hover {
+      background-color: #f2f2f2;
+    }
+
+    .table-hover.table-dark thead tr:hover {
+      background-color: #3e444a;
+    }
+
+    .table-bordered.table,th.table-bordered.table-td {
+      border: #dee2e6 1px solid;
+    }
+
+    .table-bordered.table-dark th,.table-bordered.table-dark td {
+      border: #454d55 1px solid;
+    }
+
+    .table-borderless tr,.table-borderless th, .table-borderless td {
+      border: none;
+    }
+
+    .table * {
+      padding: 0;
+    }
+
+  </style>
 </head>
 <body>
+  <table class="table-dark table-hover">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>First</th>
+        <th>Last</th>
+        <th>Handle</th>
+      </tr>
+    </thead>
 
+    <tbody>
+      <tr>
+        <th>1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+        <th>3</th>
+        <td colspan="2">Larry</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
 </body>
 </html>
