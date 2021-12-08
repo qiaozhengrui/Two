@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* * {
+      background-color: rgba(0, 0, 0, 0.08);
+      box-shadow: inset 0 0 1px red;
+    } */
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .fatherBOX {
+      width: 300px;
+      height: 300px;
+      margin: 20px;
+      background-color: green;
+    }
+
+    .sonBOX {
+      width: 100px;
+      height: 100px;
+      background-color: orange;
+    }
+
+    /* 行内布局 */
+    .fatherBOX1 {
+      text-align: center;
+      line-height: 300px;
+    }
+    .sonBOX1 {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: normal;
+    }
+
+    /* 表格布局 */
+    .fatherBOX2 {
+      display: table-cell;
+      vertical-align: middle;
+    }
+    .sonBOX2 {
+      margin: auto;
+    }
+
+    /* 完全定位 */
+    .fatherBOX3 {
+      position: relative;
+    }
+    .sonBOX3 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+    }
+
+    /* flex 1 */
+    .fatherBOX4 {
+      display: flex;
+    }
+
+    .sonBOX4 {
+      margin: auto;
+    }
+
+    /* flex 2 */
+    .fatherBOX5 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+    /* .sonBOX5 {
+      align-self: center;
+    } */
+
+    /* transform右下移动父元素一半减子元素一半(2D变换) */
+    .fatherBOX6 {
+      position: relative;
+    }
+
+    .sonBOX6 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .fatherBOX7 {
+      display: grid;
+      place-items: center;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h2>行内布局</h2>
+  <div class="fatherBOX fatherBOX1">
+    <div class="sonBOX sonBOX1">1</div>
+  </div>
+
+  <h2>表格</h2>
+  <div class="fatherBOX fatherBOX2">
+    <div class="sonBOX sonBOX2">2</div>
+  </div>
+
+  <h2>完全定位</h2>
+  <div class="fatherBOX fatherBOX3">
+    <div class="sonBOX sonBOX3">3</div>
+  </div>
+
+  <h2>flex1</h2>
+  <div class="fatherBOX fatherBOX4">
+    <div class="sonBOX sonBOX4">4</div>
+  </div>
+
+  <h2>flex2</h2>
+  <div class="fatherBOX fatherBOX5">
+    <div class="sonBOX sonBOX5">5</div>
+  </div>
+
+  <h2>transform右下移动父元素一半减子元素一半(2D变换)</h2>
+  <div class="fatherBOX fatherBOX6">
+    <div class="sonBOX sonBOX6">6</div>
+  </div>
+
+  <h2>grid</h2>
+  <div class="fatherBOX fatherBOX7">
+    <div class="sonBOX sonBOX7">7</div>
+  </div>
+</body>
+</html>
