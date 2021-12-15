@@ -5,45 +5,45 @@
   <title>Basic Coding Test</title>
 </head>
 <body>
-  <script   id="ch0103/01">
+  <script type="xxx" id="ch0103/01">
     var a = Number(prompt('a'))
     var b = Number(prompt('b'))
     console.log(a + b)
   </script>
 
-  <script  id="ch0103/02">
+  <script type="xxx" id="ch0103/02">
     var a = Number(prompt('a'))
     var b = Number(prompt('b'))
     var c = Number(prompt('c'))
     console.log((a * c) + (b * c))
   </script>
 
-  <script  id="ch0103/03">
+  <script type="xxx" id="ch0103/03">
     var a = Number(prompt('a'))
     var b = Number(prompt('b'))
     var c = Number(prompt('c'))
     console.log(parseInt(a + b) / c)
   </script>
 
-  <script  id="ch0103/04">
+  <script type="xxx" id="ch0103/04">
     var a = Number(prompt('a'))
     var b = Number(prompt('b'))
     console.log(parseInt(a / b),(a % b))
   </script>
 
-  <script   id="ch0103/05">
+  <script type="xxx" id="ch0103/05">
     var a = Number(prompt('a'))
     var b = Number(prompt('b'))
     console.log(b != 0 && ((a / b).toFixed(9)))
   </script>
 
-  <script   id="ch0103/06">
+  <script type="xxx" id="ch0103/06">
     var a = Number(prompt('a'))
     var b = Number(prompt('b'))
     console.log(((b / a *100).toFixed(3)) + '%')
   </script>
 
-  <script   id="ch0103/07">
+  <script type="xxx" id="ch0103/07">
     var x = Number(prompt('x'))
     var a = Number(prompt('a'))
     var b = Number(prompt('b'))
@@ -52,34 +52,34 @@
     console.log(((a * (x * x * x)) + (b * (x * x)) + (c * x) + d).toFixed(7))
   </script>
 
-  <script   id="ch0103/08">
+  <script type="xxx" id="ch0103/08">
      var f = Number(prompt('f'))
      console.log((5 * (f - 32) / 9).toFixed(5))
   </script>
 
-  <script   id="ch0103/09">
+  <script type="xxx" id="ch0103/09">
     var r = Number(prompt('r'))
     console.log(((2 * r).toFixed(4)),((2 * 3.14159 * r).toFixed(4)),((3.14159 * r * r).toFixed(4)))
   </script>
 
-  <script   id="ch0103/10">
+  <script type="xxx" id="ch0103/10">
     var r1 = Number(prompt('r1'))
     var r2 = Number(prompt('r2'))
     console.log((1 / ((1 / r1) + (1 / r2))).toFixed(2))
   </script>
 
-  <script   id="ch0103/11">
+  <script type="xxx" id="ch0103/11">
     var a = Number(prompt('a'))
     var b = Number(prompt('b'))
     console.log((a % b).toFixed(4))
   </script>
 
-  <script   id="ch0103/12">
+  <script type="xxx" id="ch0103/12">
     var r = Number(prompt('r'))
     console.log(((4 / 3 * 3.14) * (r * r * r)).toFixed(2))
   </script>
 
-  <script   id="ch0103/13">
+  <script type="xxx" id="ch0103/13">
     var n = Number(prompt('n'))
     var ge = Math.floor(n / 100)
     var shi = Math.floor(n % 100 / 10)
@@ -87,8 +87,192 @@
     console.log(bai.toString() + shi.toString() + ge.toString())
   </script>
 
-  <script id="">
+  <script type="xxx" id="ch0103/14">
+    var h = parseInt(prompt('h'))
+    var r = parseInt(prompt('r'))
+    console.log(Math.ceil(20 / (Math.PI * (r ** 2) * h / 1000 )))
+  </script>
 
+  <script type="xxx" id="ch0103/15">
+    var n = parseInt(prompt('n'))
+    var x = parseInt(prompt('x'))
+    var y = parseInt(prompt('y'))
+    console.log(n - Math.ceil(y / x))
+  </script>
+
+  <script type="xxx" id="ch0103/16">
+    var Xa = parseInt(prompt('Xa'))
+    var Ya = parseInt(prompt('Ya'))
+    var Xb = parseInt(prompt('Xb'))
+    var Yb = parseInt(prompt('Yb'))
+    console.log(Math.sqrt(((Xb - Xa) ** 2) + ((Yb - Ya) ** 2)).toFixed(3))
+  </script>
+
+  <script type="xxx" id="ch0103/17">
+    var x1 = Number(prompt('x1'))
+    var y1 = Number(prompt('y1'))
+    var x2 = Number(prompt('x2'))
+    var y2 = Number(prompt('y2'))
+    var x3 = Number(prompt('x3'))
+    var y3 = Number(prompt('y3'))
+    var a = Math.sqrt(Number(((x1 - x2) ** 2) + ((y1 - y2) ** 2)))
+    var b = Math.sqrt(Number(((x1 - x3) ** 2) + ((y1 - y3) ** 2)))
+    var c = Math.sqrt(Number(((x3 - x2) ** 2) + ((y3 - y2) ** 2)))
+    var p = Number((a + b + c) / 2)
+    var s = Math.sqrt(p * (p - a) * (p - b) * (p - c))
+    console.log((s).toFixed(2))
+  </script>
+
+  <Script type="xxx" id="ch0103/18">
+    var a1 = parseInt(prompt('a1'))
+    var a2 = parseInt(prompt('a2'))
+    var n = parseInt(prompt('n'))
+    console.log(parseInt(a1 + (a2 - a1) * (n - 1)))
+  </Script>
+
+  <script type="xxx" id="ch0103/19">
+    var A = parseInt(prompt('A'))
+    var B = parseInt(prompt('B'))
+    console.log(parseInt(A * B))
+  </script>
+
+  <script type="xxx" id="ch0103/20">
+    var n = parseInt(prompt('n'))
+    console.log(2 ** n)
+  </script>
+
+  <script type="xxx" id="ch0104/01">
+    var N = parseInt(prompt('N'))
+
+    if (N > 0) {
+      console.log('positive')
+    } else if (N == 0) {
+      console.log('zero')
+    } else {
+      console.log('negative')
+    }
+  </script>
+
+  <script type="xxx" id="ch0104/02">
+    var n = prompt('n')
+
+    if (n > 0) {
+      console.log(n)
+    } else {
+      console.log(-n)
+    }
+  </script>
+
+  <script type="xxx" id="ch0104/03">
+    var n = parseInt(prompt('n'))
+
+    if (n % 2 == 0) {
+      console.log('even')
+    } else {
+      console.log('odd')
+    }
+  </script>
+
+  <script type="xxx" id="ch0104/04">
+    var n = prompt('n')
+    var a = n.charCodeAt()
+
+    if (a % 2 == 0) {
+      console.log('NO')
+    } else {
+      console.log('YES')
+    }
+  </script>
+
+  <script type="xxx" id="ch0104/05">
+    let x = parseInt(prompt('x'))
+    let y = parseInt(prompt('y'))
+
+    if (x > y) {
+      console.log('>')
+    } else if (x == y) {
+      console.log('=')
+    } else {
+      console.log('<')
+    }
+  </script>
+
+  <script type="xxx" id="ch0104/06">
+    let n = parseInt(prompt('n'))
+
+    if (n >= 10 && n <= 99) {
+      console.log('1')
+    } else {
+      console.log('0')
+    }
+  </script>
+
+  <script type="xxx" id="ch0104/07">
+    let a = parseInt(prompt('a'))
+    let b = parseInt(prompt('b'))
+
+    if (a >= 10 || b >= 20) {
+      console.log('1')
+    } else {
+      console.log('0')
+    }
+  </script>
+
+  <script type="xxx" id="ch0104/08">
+    let n = parseInt(prompt('n'))
+
+    if (n % 3 == 0 && n % 5 == 0) {
+      console.log('YES')
+    } else {
+      console.log('NO')
+    }
+  </script>
+
+  <script type="xxx" id="ch0104/09">
+    let a = parseInt(prompt('a'))
+
+    if (a % 3 == 0 && a % 5 == 0 && a % 7 == 0) {
+      console.log('3 5 7')
+    } else if (a % 3 == 0 && a % 5 == 0) {
+      console.log('3 5')
+    } else if (a % 3 == 0 && a % 7 == 0) {
+      console.log('3 7')
+    } else if (a % 5 == 0 && a & 7 == 0) {
+      console.log('5 7')
+    } else if (a % 3 == 0) {
+      console.log('3')
+    } else if (a % 5 == 0) {
+      console.log(5)
+    } else if (a % 7 == 0) {
+      console('7')
+    } else {
+      console.log('n')
+    }
+  </script>
+
+  <script type="xxx" id="ch0104/10">
+    let a = parseInt(prompt('a'))
+    let b = parseInt(prompt('b'))
+
+    if (a < 60 || b < 60 ) {
+      console.log('1')
+    } else {
+      console.log('0')
+    }
+  </script>
+
+  <script type="xxx" id="ch0104/11">
+    let a = Number(prompt('a'))
+
+    if (a == 1 || a == 3 || a == 5) {
+      console.log('NO')
+    } else {
+      console.log('YES')
+    }
+  </script>
+
+  <script id="ch0104/12">
+    
   </script>
 
 </body>
