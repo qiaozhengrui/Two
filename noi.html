@@ -271,9 +271,821 @@
     }
   </script>
 
-  <script id="ch0104/12">
-    
+  <script type="xxx" id="ch0104/12">
+    let s = parseInt(prompt())
+    t1 = s / 1.2
+    t2 = s / 3 + 50
+
+    if (t1 > t2) {
+      console.log('Bike')
+    } else if (t2 > t1) {
+      console.log('Walk')
+    } else {
+      console.log('All')
+    }
   </script>
+
+  <script type="xxx" id="ch0104/13">
+    let x = Number(prompt())
+    let y
+
+    if (0 <= x && x < 5) {
+      y = -x + 2.5
+    } else if (5 <= x && x < 10) {
+      y = 2- 1.5 * (x-3) * (x-3)
+    } else if (10 <= x && x < 20) {
+      y = x / 2 - 1.5
+    }
+
+    console.log(y.toFixed(3))
+  </script>
+
+  <script type="xxx" id="ch0104/14">
+    let g = parseInt(prompt())
+    let urgent = prompt()
+
+    if (g <= 1000 && urgent == 'n') {
+      console.log(parseInt(8))
+    }
+    else if (g <= 1000 && urgent == 'y') {
+      console.log(parseInt(8 + 5))
+    }
+    else if (g > 1000 && urgent == 'n') {
+      console.log((Math.ceil((g - 1000) / 500) * 4 + 8))
+    }
+    else if (g > 1000 && urgent == 'y') {
+      console.log((Math.ceil((g - 1000) / 500) * 4 + 8 + 5))
+    }
+  </script>
+
+  <script type="xxx" id="ch0104/15">
+    let a = parseInt(prompt())
+    let b = parseInt(prompt())
+    let c = parseInt(prompt())
+
+     if (a >= b && a >= c) {
+       console.log(parseInt(a))
+     } else if (b >= a && b >= c) {
+       console.log(parseInt(b))
+     } else if (c >= a && c >= b) {
+       console.log(parseInt(c))
+     }
+  </script>
+
+  <!-- <script  id="ch0104/15">
+    let a = parseInt(prompt())
+    let b = parseInt(prompt())
+    let c = parseInt(prompt())
+
+    let max = a
+
+    if (b > max) {
+      max = b
+    }
+    if (c > max) {
+      max = c
+    }
+
+    console.log(max)
+  </script> -->
+
+  <script type="xxx" id="ch0105/01">
+    let n = parseInt(prompt())
+    let ageSum = 0
+    let counter = 0
+
+    while (counter < n) {
+      let age = parseInt(prompt())
+      ageSum = ageSum + age
+      counter = counter + 1
+    }
+
+    console.log((ageSum / n).toFixed(2))
+  </script>
+
+  <script type="xxx" id="ch0105/02">
+    let n = 0
+
+    for (let i = 0; i < 12; i++) {
+      n += parseFloat(prompt("每月结余钱数"))
+    }
+    console.log('$' + (n / 12).toFixed(2).toString())
+  </script>
+
+  <script type="xxx" id="ch0105/03">
+    let n = parseInt(prompt())
+    let sum = 0
+
+    for (let i = 0; i < n; i++) {
+      sum = sum + parseFloat(prompt())
+    }
+    console.log(parseFloat(sum / n).toFixed(4))
+  </script>
+
+  <script type="xxx" id="ch0105/04">
+    let n = parseInt(prompt())
+    let sum = 0
+
+    for (let i = 0; i < n; i++) {
+      sum += parseInt(prompt())
+    }
+    console.log(sum, parseFloat(sum / n).toFixed(5))
+  </script>
+
+  <script type="xxx" id="ch0105/05">
+    let n =parseInt(prompt("人数"))
+    let max = 0
+    // (每次输出的结果)
+
+    for (let i = 0; i < n; i++) {
+      let fenshu = parseInt(prompt("每次输入分数"))
+      if (fenshu > max) {
+         max = fenshu
+      }
+    }
+    console.log(max)
+  </script>
+
+  <script type="xxx" id="ch0105/06">
+    let n = parseInt(prompt("请输入几个数"))
+    let max = 0
+    let min = 0
+
+    for (let i = 0; i < n; i++) {
+      let num = parseInt(prompt("输入数值"))
+      if (num > max) {
+        max = num
+      }
+      if (num < min) {
+        min = num
+      }
+    }
+      console.log(max - min)
+  </script>
+
+  <script type="xxx" id="ch0105/07">
+    let n = parseInt(prompt("天数"))
+    let gold = 0
+    let sliver = 0
+    let copper = 0
+
+    for (let i = 0; i < n; i++) {
+      gold += parseInt(prompt("金牌数"))
+      sliver += parseInt(prompt("银牌数"))
+      copper += parseInt(prompt("铜牌数"))
+    }
+      console.log(gold, sliver, copper, gold + sliver + copper)
+  </script>
+
+  <script type="xxx" id="ch0105/08">
+    let n = parseInt(prompt("输入是几边形"))
+    let sum = 0/* 每次输出度数和 */
+
+    for (let i = 1; i < n; i++) {
+      sum += parseInt(prompt("输入角度"))
+    }
+    console.log((n - 2) * 180 - sum)
+  </script>
+
+  <script type="xxx" id="ch0105/09">
+    let m = parseInt(prompt())
+    let n = parseInt(prompt())
+    let sum = 0
+
+    for (let i = m; i <= n; i++) {
+      if (i % 2 == 1){
+        sum += i
+      }
+    }
+    console.log(sum)
+  </script>
+
+  <script type="xxx" id="ch0105/10">
+    let m = parseInt(prompt())
+    let n = parseInt(prompt())
+    let sum = 0
+
+    for (let i = m; i <= n; i++) {
+      if (i % 17 == 0) {
+        sum += i
+      }
+    }
+    console.log(sum)
+  </script>
+
+  <script type="xxx" id="ch0105/11">
+    let k = parseInt(prompt("几个数？"))
+    let one = 0
+    let five = 0
+    let ten = 0
+
+    for (let i = 0; i < k; i++) {
+      let sum = parseInt(prompt("数字"))
+      if (sum == 1) {
+        one++
+      }
+      if (sum == 5) {
+        five++
+      }
+      if (sum == 10) {
+        ten++
+      }
+    }
+    console.log(one, five, ten)
+  </script>
+
+  <script type="xxx" id="ch0105/12">
+    let n = parseInt(prompt("输入有几个数"))
+    let m = parseInt(prompt("指定相同的数字"))
+    let count = 0
+
+    for (let i = 0; i < n; i++) {
+      if(m == parseInt(prompt("相同数字"))) {
+        count++
+      }
+    }
+    console.log(count)
+  </script>
+
+  <script type="xxx" id="ch0105/13">
+    let a = parseInt(prompt())
+    let n = parseInt(prompt())
+    let sum = 1
+
+    for (let i = 0; i < n; i++) {
+      sum = sum * a
+    }
+    console.log(sum)
+  </script>
+
+  <script type="xxx" id="ch0105/14">
+    let x = parseInt(prompt("人基"))
+    let n = parseInt(prompt("年数"))
+    let sum = 0
+
+    for (let i = 1; i <= n; i++) {
+      x = x * 0.001 + x
+      sum = x
+    }
+    console.log(sum.toFixed(4))
+  </script>
+
+  <script type="xxx" id="ch0105/15">
+    let R = parseInt(prompt("年化"))
+    let M = parseInt(prompt("本金"))
+    let Y = parseInt(prompt("存款年限"))
+    let sum = 0
+
+    for (i = 0; i < Y; i++) {
+      M = M * R / 100 + M
+      sum = M
+    }
+    console.log(parseInt(M))
+  </script>
+
+  <script type="xxx" id="ch0105/16">
+    let N = parseInt(prompt("工资"))
+    let K = parseInt(prompt("房价上涨利率"))
+    let house = 200 //每年房价
+    let sum = 0//手上的钱
+    let buyed = false
+
+    for (let i = 1; i < 21; i++) {
+      sum += N
+      if (sum >= house) {
+        console.log(i)
+        buyed = true
+        break
+      }
+      house = house * K / 100 + house
+    } if (!buyed) {
+      console.log('Impossible')
+    }
+  </script>
+
+  <script type="xxx" id="ch0105/17">
+    let k = parseInt(prompt())
+    let sum = 0
+    let a = 0
+    let b = 1
+    let c
+
+    for (let i = 1; i <= k; i++) {
+      c = a + b
+      a = b
+      b = c
+    }
+    console.log(a)
+  </script>
+
+  <script type="xxx" id="ch0105/18">
+    let n = parseInt(prompt("几组数据"))
+    let x = parseInt(prompt("鸡尾酒疗法的有效"))
+    let y = parseInt(prompt("新疗法的有效"))
+    let ratio = y / x //有效率 比例
+
+    for (let i = 1; i < n; i++) {
+      let x = parseInt(prompt("鸡尾酒疗法的有效"))
+      let y = parseInt(prompt("新疗法的有效"))
+      if (y / x - ratio > 0.05) {
+        console.log('better')
+    } else if (ratio - y / x > 0.05) {
+      console.log('worse')
+    } else {
+      console.log('same')
+    }
+  }
+  </script>
+
+  <script type="xxx" id="ch0105/19">
+    let n = parseInt(prompt('屋顶数'))
+    let sum = 0
+
+    for (i = 0; i < n; i++) {
+      let x = parseInt(prompt('坐标'))
+      let y = parseInt(prompt('坐标'))
+      let p = parseInt(prompt('被救人数'))
+      let d = Math.sqrt(x * x + y * y)//开船来回时间
+      let time = p * 1.5 + d / 50 * 2
+      sum += time
+    }
+    console.log(Math.ceil(sum))
+  </script>
+
+  <script type="xxx" id="ch0105/20">
+    let h = parseInt(prompt("球的第一次高度"))
+    let sum = h //球跳了多远
+
+    for (i = 2; i <= 10; i++) {
+      h = h / 2 //第一次球落地之前的高度
+      sum += h * 2 //球落地以后的距离累加
+    }
+    console.log(sum, h / 2)
+  </script>
+
+  <script type="xxx" id="ch0105/21">
+    let n = parseInt(prompt("整数"))
+
+    while (true) {
+      if ( n == 1) {
+        console.log('End')
+        break
+      } if (n % 2 == 1) {
+        let t = n * 3 + 1
+        console.log(n + '*3+1=' + t)
+        n = t
+      } else if (n % 2 == 0) {
+        let t = n / 2
+        console.log(n + '/2=' + t)
+        n = t
+      }
+    }
+  </script>
+
+
+  <script type="xxx" id="ch0105/21">
+    let n = parseInt(prompt())
+
+    while (n != 1) {
+      if (n % 2 == 1) {
+        let t = n * 3 + 1
+        console.log(n + '*3+1=' + t)
+          n = t
+      }
+
+      if (n % 2 == 0) {
+        let t = n / 2
+        console.log(n + '/2=' + t)
+        n = t
+      }
+    }
+    console.log('End')
+  </script>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
+
+
+
+
