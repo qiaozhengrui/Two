@@ -51,8 +51,138 @@ var qiaozhengrui = {
   compact: function (array) {
     let res = []
 
-    
+    for (let i = 0; i < array.length; i++) {
+      if (!!array[i] == true) {// 遍历数组array,对遍历到的元素i强制转换成布尔值,将布尔值为true的push到结果中
+        res.push(array[i])
+      }
+    }
+    return res
+    return array.filter(i => !!i == true)
+
+  /**
+   * 方法二
+   *let res = []
+   *
+   *for (let i = 0; i < array.length; i++) {
+   *  if (array[i]) {
+   *    res.push(array[i])
+   * }
+   *}
+   *return res
+   */
+  },
+
+ /**
+ * 创建一个切片数组，去除array前面的n个元素。（n默认值为1。）
+ *
+ _.drop([1, 2, 3]);
+// => [2, 3]
+
+_.drop([1, 2, 3], 2);
+// => [3]
+
+_.drop([1, 2, 3], 5);
+// => []
+
+_.drop([1, 2, 3], 0);
+// => [1, 2, 3]
+ */
+
+  drop: function (array, n = 1) {
+    if (n > array.length) {
+      return []
+    }
+
+    let res = []
+    for (let i = n; i < array.length; i++) {
+      res.push(array[i])
+    }
+    return res
+  },
+
+
+/**
+  * 创建一个切片数组，去除array尾部的n个元素。（n默认值为1。）.
+  *
+  *
+  * _.dropRight([1, 2, 3]);
+  * // => [1, 2]
+  *
+  * _.dropRight([1, 2, 3], 2);
+  * // => [1]
+  *
+  * _.dropRight([1, 2, 3], 5);
+  * // => []
+  *
+  * _.dropRight([1, 2, 3], 0);
+  * // => [1, 2, 3]
+  */
+
+  dropRight: function (array, n = 1) {
+    if (n > array.length) {
+      return []
+    }
+
+    let res = []
+    for (let i = 0; i < array.length - n; i++) {
+      res.push(array[i])
+    }
+    return res
   }
+
+ /**
+  * 使用 value 值来填充（替换） array，从start位置开始, 到end位置结束（但不包含end位置）
+  *
+  * **Note:** 这个方法会改变 array（注：不是创建新数组）.
+  *
+  *
+  * 参数
+  * @array (Array): 要填充改变的数组。
+  * @value (*): 填充给 array 的值。
+  * @[start=0] (number): 开始位置（默认0）。
+  * @[end=array.length] (number):结束位置（默认array.length）。
+  *
+  * var array = [1, 2, 3];
+  *
+  * _.fill(array, 'a');
+  * console.log(array);
+  * // => ['a', 'a', 'a']
+  *
+  * _.fill(Array(3), 2);
+  * // => [2, 2, 2]
+  *
+  * _.fill([4, 6, 8, 10], '*', 1, 3);
+  * // => [4, '*', '*', 10]
+  */
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
